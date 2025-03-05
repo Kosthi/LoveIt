@@ -201,3 +201,6 @@ other = "更改"
 [deleted]
 other = "删除"
 # === shortcodes/version.html ===
+
+[runtime]
+other = "本站已运行 <i class='far fa-clock fa-fw'></i> %%DAYS%% 天 %%HOURS%% 小时 %%MINUTES%% 分钟 %%SECONDS%% 秒"

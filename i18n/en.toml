@@ -196,3 +196,6 @@ other = "CHANGED"
 [deleted]
 other = "DELETED"
 # === shortcodes/version.html ===
+
+[runtime]
+other = "Running for <i class='far fa-clock fa-fw'></i> %%DAYS%% days %%HOURS%% hours %%MINUTES%% minutes %%SECONDS%% seconds"

@@ -8,6 +8,10 @@
                 </div>
             {{- end -}}
 
+            <div id="run-time"
+                data-start-time="{{ .Site.Params.siteStartTime }}"
+                data-i18n-runtime="{{ T "runtime" }}"></div>
+
             {{- /* Hugo and LoveIt */ -}}
             {{- if ne .Site.Params.footer.hugo false -}}
                 <div class="footer-line">
