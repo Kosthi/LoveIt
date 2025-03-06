@@ -44,6 +44,12 @@
                     &nbsp;|&nbsp;<span class="license">{{ . | safeHTML }}</span>
                 {{- end -}}
 
+                {{- /* PSB */ -}}
+                {{- with .Site.Params.footer.psb -}}
+                    <span class="icp-splitter">&nbsp;|&nbsp;</span><br class="icp-br"/>
+                    <span class="icp">{{ . | safeHTML }}</span>
+                {{- end -}}
+
                 {{- /* ICP */ -}}
                 {{- with .Site.Params.footer.icp -}}
                     <span class="icp-splitter">&nbsp;|&nbsp;</span><br class="icp-br"/>
