@@ -218,3 +218,9 @@
 <script type="text/javascript" src="/js/custom.js"></script>
 
 {{- partial "plugin/analytics.html" . -}}
+
+{{- /* busuanzi */ -}}
+{{- if .Site.Params.page.viewsCount -}}
+    {{- $source := $cdn.busuanziJS | default "lib/busuanzi/bsz.pure.mini.js" -}}
+    {{- dict "Source" $source "Fingerprint" $fingerprint | dict "Scratch" .Scratch "Data" | partial "scratch/script.html" -}}
+{{- end -}}
