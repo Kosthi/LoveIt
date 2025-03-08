@@ -56,6 +56,17 @@
                     <span class="icp">{{ . | safeHTML }}</span>
                 {{- end -}}
             </div>
+            {{ if .Site.Params.page.viewsCount -}}
+                <div class="busuanzi-footer">
+                    <span id="busuanzi_container_site_pv">
+                        <i class="fa fa-eye"></i> <span id="busuanzi_value_site_pv"></span>
+                    </span>
+                    &nbsp;|&nbsp;
+                    <span id="busuanzi_container_site_uv">
+                        <i class="fa fa-user"></i> <span id="busuanzi_value_site_uv"></span>
+                    </span>
+                </div>
+            {{- end -}}
         </div>
     </footer>
 {{- end -}}

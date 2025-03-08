@@ -184,3 +184,8 @@
         <div id="search-dropdown-mobile"></div>
     </div>
 {{- end -}}
+
+{{- if .Site.Params.page.viewsCount -}}
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <meta name="referrer" content="no-referrer-when-downgrade"/>
+{{- end -}}
